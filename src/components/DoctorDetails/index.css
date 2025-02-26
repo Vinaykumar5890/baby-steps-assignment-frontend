@@ -1,0 +1,120 @@
+/* Doctor Details Container */
+.doctorDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #212121, #333); /* Gradient background */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    
+    height: 100vh;
+  }
+  
+  /* Doctor Info Section */
+  .doctorInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Doctor Image */
+  .doctorImage {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+  }
+  
+  /* Doctor Name */
+  .doctorName {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffd700; /* Gold accent */
+    margin-bottom: 10px;
+  }
+  
+  /* Specialization and Working Hours */
+  .doctorSpecialization, .doctorWorkingHours {
+    font-size: 18px;
+    color: #ccc;
+    margin: 5px 0;
+  }
+  
+  /* Doctor Description Text */
+  .doctorDescriptionText {
+    font-size: 16px;
+    color: #e0e0e0;
+    line-height: 1.5;
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+  
+  /* Loader Section */
+  .loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .loadingText {
+    font-size: 18px;
+    color: #ffd700;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .doctorInfo {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .doctorImage {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .doctorName {
+      font-size: 24px;
+    }
+  
+    .doctorSpecialization, .doctorWorkingHours {
+      font-size: 16px;
+    }
+  
+    .doctorDescriptionText {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .doctorImage {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .doctorName {
+      font-size: 20px;
+    }
+  
+    .doctorSpecialization, .doctorWorkingHours {
+      font-size: 14px;
+    }
+  
+    .doctorDescriptionText {
+      font-size: 12px;
+    }
+  }
+  

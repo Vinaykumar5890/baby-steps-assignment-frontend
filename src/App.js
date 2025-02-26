@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Doctors from "./components/Doctors";
+import Home from "./components/Home";
+import Appointments from "./components/Appointments";
+import Contact  from "./components/Contact";
+import DoctorDetails from "./components/DoctorDetails";
+import BookAppointment from "./components/BookAppointment";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+const App=()=>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+<div>
+<BrowserRouter>
+<Switch>
+  <Route exact path="/" component={Home}  />
+  <Route exact path="/doctors" component={Doctors} />
+  <Route exact path="/appointments" component={Appointments} />
+  <Route exact path="/contact" component={Contact} />
+  <Route  exact path="/doctor/:id" component={DoctorDetails} />
+  <Route path="/book-appointment/:doctorId" component={BookAppointment} />
+</Switch>
+</BrowserRouter>
+</div>
+  )
 }
-
 export default App;
